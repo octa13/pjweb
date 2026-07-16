@@ -34,9 +34,12 @@ a{
 
     position:sticky;  /*nav estático mientras se hace scroll*/
     top:0;
-     z-index:1000;
+    z-index:1000;
+
+  
 
 }
+
 
 
 
@@ -143,7 +146,7 @@ MENÚ LATERAL
 
     flex-direction:column;
 
-    justify-content:space-between;
+    justify-content:flex-start;
 
     padding:8px 0 35px;
 
@@ -179,7 +182,7 @@ MENÚ LATERAL
 
     gap:14px;
 
-    box-shadow:0 10px 30px rgba(246,182,0,.30);
+   
 
     transition:.35s;  
    
@@ -191,7 +194,7 @@ MENÚ LATERAL
 
     transform:translateY(-2px);
 
-    box-shadow:0 18px 35px rgba(246,182,0,.45);
+    
 
 }
 
@@ -202,9 +205,9 @@ MENÚ LATERAL
 
 .menu__boton-afiliate:hover{
 
-    background: #ebb137;
+    background:#1677E6;
 
-    color:#02285F;
+    color:white;
 
     
 
@@ -502,15 +505,21 @@ IMAGEN
 
 }
 
-.hero__imagen img{
+.hero__img-mobile{
 
-     width:100%;
+    display:block;
+
+    width:100%;
 
     height:100%;
 
     object-fit:cover;
 
-    display:block;
+}
+
+.hero__img-desktop{
+
+    display:none;
 
 }
 
@@ -657,6 +666,11 @@ BOTONES
 
     transform:translateY(-3px);
 
+    background-color: transparent;
+
+    border: solid 2px #EBB137;
+
+    color: white;
 }
 
 .hero__boton--oscuro{
@@ -671,7 +685,7 @@ BOTONES
 
 .hero__boton--oscuro:hover{
 
-    background:rgba(255,255,255,.08);
+    background:#1454AF;
 
 }
 
@@ -1811,7 +1825,22 @@ footer {
     
 }
 
+.participa__desktop{
+    display: none;
+}
 
+.nosotrosesc{
+    display: none;
+}
+
+
+.afiliateesc{
+    display: none;
+}
+
+.footer-links{
+    display: none;
+}
 
 /*========================================================================================
 VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO 
@@ -1994,7 +2023,7 @@ VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO 
 
     height:40px;
 
-    margin:0;
+   margin-right: 25px;
 
     padding:0;
 
@@ -2018,5 +2047,1250 @@ VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO VERSIÓN ESCRITORIO 
     display:none;
     }
 
+
+
+
+
+/*====================================
+HERO - ESCRITORIO
+====================================*/
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:560px;
+
+    overflow:hidden;
+
+    background:#021C40;
+
 }
+
+/*=========================
+IMÁGENES
+=========================*/
+
+.hero__img-mobile{
+
+    display:none;
+
+}
+
+.hero__imagen{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.hero__img-desktop{
+
+   
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:100%;
+    height:auto;
+
+    display:block;
+
+}
+
+
+
+/*=========================
+TÍTULO
+=========================*/
+
+.hero__titulo{
+
+    position:absolute;
+
+    top:80px;
+
+    left:50px;
+
+    z-index:3;
+
+    color:#FFF;
+
+    font-size:5rem;
+
+    line-height:.95;
+
+    font-weight:800;
+
+}
+
+.hero__titulo span{
+
+    display:block;
+
+    color:#63B3FF;
+
+}
+
+/*=========================
+LÍNEA
+=========================*/
+
+.hero__linea{
+
+    position:absolute;
+
+    top:240px;
+
+    left:60px;
+
+    width:90px;
+
+    height:6px;
+
+    background:#EBB137;
+
+    border-radius:50px;
+
+    z-index:3;
+
+}
+
+/*=========================
+CONTENIDO
+=========================*/
+
+.hero__contenido{
+
+    position:absolute;
+
+    top:350px;
+
+    left:50px;
+
+    width:520px;
+
+    padding:0;
+
+    background:none;
+
+    z-index:3;
+
+}
+
+/*=========================
+DESCRIPCIÓN
+=========================*/
+
+.hero__descripcion{
+
+    color:#FFF;
+
+    font-size:1.5rem;
+
+    line-height:1.2;
+
+    font-weight:400;
+
+}
+
+.hero__descripcion strong{
+
+    font-weight:700;
+
+}
+
+/*=========================
+BOTONES
+=========================*/
+
+.hero__botones{
+
+    display:flex;
+
+    flex-direction:row;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.hero__boton{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:210px;
+
+    height:60px;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+}
+
+.hero__boton--amarillo{
+
+    background:#EBB137;
+
+    color:#02285F;
+
+}
+
+.hero__boton--amarillo:hover{
+
+    transform:translateY(-3px);
+    background: #1677E6;
+    color: white;
+    border: none;
+
+}
+
+.hero__boton--oscuro{
+
+    border:2px solid rgba(255,255,255,.40);
+
+    color:#FFF;
+
+    background:transparent;
+
+}
+
+.hero__boton--oscuro:hover{
+
+     background: #1677E6;
+    color: white;
+    border: none;
+
+}
+
+
+
+/*=====================================
+NOVEDADES - DESKTOP
+=====================================*/
+
+.novedades{
+
+    padding:80px 0;
+
+}
+
+.novedades .contenedor{
+
+    width:min(92%, 1400px);
+
+    margin:auto;
+
+}
+
+/*=========================
+TÍTULOS
+=========================*/
+
+.novedades__subtitulo{
+
+    font-size:.95rem;
+
+    margin-bottom:15px;
+
+}
+
+.novedades__titulo{
+
+    font-size:3.1rem;
+
+    margin-bottom:55px;
+
+}
+
+/*=========================
+SLIDER
+=========================*/
+
+.slider{
+
+    overflow:visible;
+
+}
+
+.slider__track{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+    transform:none !important;
+
+}
+
+/* Oculta la quinta card */
+
+.card:nth-child(5){
+
+    display:none;
+
+}
+
+/*=========================
+CARD
+=========================*/
+
+.card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:initial;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:#FFF;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.16);
+
+}
+
+/*=========================
+IMAGEN
+=========================*/
+
+.card img{
+
+    width:100%;
+
+    height:210px;
+
+    object-fit:cover;
+
+    transition:transform .45s ease;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================
+CONTENIDO
+=========================*/
+
+.card__contenido{
+
+    padding:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.card__contenido span{
+
+    font-size:.78rem;
+
+    letter-spacing:1px;
+
+    margin-bottom:15px;
+
+}
+
+.card__contenido h3{
+
+    font-size:1.18rem;
+
+    line-height:1.45;
+
+    margin-bottom:auto;
+
+    min-height:88px;
+
+}
+
+/*=========================
+FOOTER
+=========================*/
+
+.card__footer{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.card__footer small{
+
+    font-size:.85rem;
+
+}
+
+.card__footer a{
+
+    font-size:1.8rem;
+
+    transition:.3s;
+
+}
+
+.card:hover .card__footer a{
+
+    transform:translateX(8px);
+
+}
+
+/*=========================
+OCULTAR INDICADOR
+=========================*/
+
+.slider__info{
+
+    display:none;
+
+}
+
+
+/*=====================================
+PARTICIPÁ - DESKTOP
+=====================================*/
+
+.participa{
+
+    padding:30px 0;
+
+}
+
+.participa__contenedor{
+
+    width:min(92%,1300px);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+/*=========================
+BLOQUE IZQUIERDO
+=========================*/
+
+.participa__info{
+
+    width:30%;
+
+}
+
+.participa__subtitulo{
+
+    font-size:.95rem;
+
+}
+
+.participa__titulo{
+
+    font-size:3.2rem;
+
+    line-height:1.1;
+
+    margin:20px 0;
+
+}
+
+.participa__texto{
+
+    font-size:1.2rem;
+
+    line-height:1.7;
+
+    margin-bottom:40px;
+
+}
+
+.participa__texto br{
+
+    display:none;
+
+}
+
+.participa__boton{
+
+    width:260px;
+
+    height:62px;
+
+    
+
+}
+
+.participa__boton:hover{
+
+    background:#EBB137;
+
+    color:#02285F;
+}
+
+/*=========================
+BLOQUE DERECHO
+=========================*/
+
+.participa__slider{
+
+     display:none;
+
+}
+
+
+
+
+.participa__desktop{
+
+    width:55%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:25px;
+
+}
+
+.participa__card{
+    position:relative;
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:25px 20px;
+
+    max-width:170px;
+
+}
+
+.participa__card:not(:last-child)::after{
+
+      content:"";
+
+    position:absolute;
+
+    top:30px;
+
+    right:-45px;
+
+    width:1px;
+
+    height:150px;
+
+    background-color: white;
+
+}
+
+
+.participa__card img{
+
+    width:72px;
+
+    height:72px;
+
+    margin-bottom:18px;
+
+}
+
+.participa__card h3{
+
+    font-size:1.15rem;
+
+    color:white;
+
+    line-height:1.4;
+
+}
+
+
+/*=====================================
+NOSOTROS
+=====================================*/
+
+/*=====================================
+NOSOTROS
+=====================================*/
+
+
+.nosotros{
+    display: none;
+}
+
+.nosotrosesc{
+    background:#f4f3f6;
+    height: 500px;
+    
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+    display: block;
+}
+
+.nosotroscontenedoresc{
+    display: flex;
+}
+
+.nosotrosesc .nosotros__subtitulo{
+
+    color:#02285F;
+    margin-left: 45px;
+    font-size:1rem;
+    
+    
+}
+
+.blociz{
+  
+    width: 38%;
+    padding-top: 80px;
+   
+}
+
+.tituloblociz{
+    font-size: 3rem;
+    text-align: left;
+    line-height:1.1;
+    margin-top:20px;
+    margin-left: 45px;;
+    font-weight:850;
+    color: #02285F;
+}
+
+.botondelesc{
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight:700;
+     border:2px solid #1E4FAF;;
+    color:#1E4FAF;
+    margin-left: 60px;
+    margin-top: 40px;
+
+    
+
+}
+
+
+.botondelesc:hover{
+
+    background:#1E4FAF ;
+    color:white;
+    border: none;
+    
+}
+
+
+
+
+.blocmed{
+
+    width: 23%;
+    padding: 120px 20px 10px 20px;
+    margin-left: 30px;
+}
+
+
+
+.blocderecho{
+    
+    width: 39%;
+    background-image: url(imagenes/nospesc.png);
+  background-size: cover;
+   height: 500px ;
+   background-position:center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* FRASES*/
+
+.frase{
+
+    
+    background-image:url("imagenes/fraseimag.png");
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size:cover;
+}
+
+
+.frase .contenedor{
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+
+.frase__contenido{
+
+    width:1200px;
+    margin:0 auto;
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+}
+
+
+
+/*=====================================
+AFILIATE
+=====================================*/
+
+.afiliate{
+
+    display:none;
+
+}
+
+
+
+.afiliateesc{
+
+    display:block;
+
+    background:#F7F9FC;
+
+    padding:85px 0;
+
+    
+
+}
+
+/*=====================================
+CONTENEDOR
+=====================================*/
+
+.afiliateesc__contenedor{
+
+    width:min(92%,1350px);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:70px;
+
+}
+
+/*=====================================
+BLOQUE IZQUIERDO
+=====================================*/
+
+.afiliateesc__info{
+
+    width:360px;
+
+    flex-shrink:0;
+
+}
+
+.afiliateesc__subtitulo{
+
+    display:block;
+
+    color:#2F7FE6;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.afiliateesc__titulo{
+
+    color:#02285F;
+
+    font-size:3.2rem;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    margin-bottom:40px;
+
+}
+
+.afiliateesc__titulo span{
+
+    display:block;
+
+}
+
+.afiliateesc__boton{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:190px;
+
+    height:56px;
+
+    background:#EBB137;
+
+    color:#021C40;
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+    font-weight:800;
+
+    transition:.3s;
+
+}
+
+.afiliateesc__boton:hover{
+
+    transform:translateY(-4px);
+    background:#1677E6;
+
+    color:white;
+
+}
+
+/*=====================================
+BLOQUE DERECHO
+=====================================*/
+
+.afiliateesc__cards{
+
+    flex:1;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    margin-top:50px;   /* ↓ Baja el bloque */
+    margin-left: 40px;
+
+}
+
+/*=====================================
+CARD
+=====================================*/
+
+.afiliateesc__card{
+
+   display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    padding:0 28px;
+
+}
+
+/* líneas divisorias */
+
+.afiliateesc__card:not(:last-child){
+
+    border-right:1px solid #D9DEE6;
+
+}
+
+/*=====================================
+ICONOS
+=====================================*/
+
+.afiliateesc__card img{
+
+     width:46px;
+
+    height:46px;
+
+    margin-bottom:22px;
+}
+
+/*=====================================
+TEXTOS
+=====================================*/
+
+.afiliateesc__card h3{
+
+    color:#0A3B93;
+
+    font-size:1.35rem;
+
+    line-height:1.15;
+
+    margin-bottom:16px;
+
+    font-weight:700;
+
+}
+
+.afiliateesc__card p{
+
+    color:#26324C;
+
+    font-size:1rem;
+
+    line-height:1.65;
+
+}
+
+
+/*=====================================
+FOOTER - ESCRITORIO
+=====================================*/
+
+footer{
+
+    padding:50px 0;
+
+}
+
+.footer-container{
+
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+        "logo info"
+        "social info";
+
+    align-items:center;
+    height: 150px;
+    text-align:left;
+}
+
+/*=========================
+LOGO
+=========================*/
+
+.footer-logo{
+
+    grid-area:logo;
+    transform: translateY(-50px);
+
+}
+
+.footer-logo img{
+
+    max-width:280px;
+    margin:0;
+
+}
+
+/*=========================
+REDES
+=========================*/
+
+.footer-socials{
+
+    grid-area:social;
+
+    justify-content:flex-start;
+
+    width:auto;
+
+    margin-top:-180px;
+    margin-left: 80px;
+
+    gap:18px;
+
+}
+
+.footer-socials svg{
+
+    width:28px;
+    height:28px;
+
+}
+
+/*=========================
+INFORMACIÓN
+=========================*/
+
+.footer-branch{
+
+    grid-area:info;
+
+    width:auto;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.footer-branch.divider::after{
+
+    display:none;
+
+}
+
+.footer-branch h3{
+
+    font-size:1.3rem;
+    margin-bottom:18px;
+
+}
+
+.footer-branch .address{
+
+    font-size:1.1rem;
+    line-height:1.7;
+
+}
+
+.footer-branch .contact-info li{
+
+    font-size:1.1rem;
+
+}
+
+/*====================================
+FOOTER ESCRITORIO
+====================================*/
+
+.footer-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr;
+
+    align-items:start;
+
+    text-align:left;
+
+    gap:80px;
+
+}
+
+/*====================
+COLUMNA IZQUIERDA
+====================*/
+
+.footer-logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-left: 20px;
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+.footer-logo img{
+
+    width:240px;
+
+    margin-bottom:30px;
+
+}
+
+.footer-socials{
+
+    justify-content:flex-start;
+
+    width:auto;
+
+    gap:18px;
+
+}
+
+/*====================
+COLUMNA CENTRO
+====================*/
+
+.footer-branch{
+
+    margin-left: 80px;
+
+}
+
+.footer-branch.divider::after{
+
+    display:none;
+
+}
+
+/*====================
+COLUMNA DERECHA
+====================*/
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top: 5px;
+
+    margin-left: 40px;
+
+}
+
+.footer-links h3{
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+    color:#fff;
+
+}
+
+.footer-links a{
+
+    color:#fcfcfc;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight: bold;
+
+   
+
+    
+
+}
+
+.footer-links a:hover{
+
+    color:#ffffff;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

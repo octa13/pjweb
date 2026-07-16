@@ -54,6 +54,7 @@ overlay.addEventListener("click",()=>{
 
 
 
+
 /*ENCABEZADO*/
 
 const encabezado = document.querySelector(".encabezado");
