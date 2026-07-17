@@ -1642,7 +1642,7 @@ CONTENIDO
 
     color:#0A3B93;
 
-    font-size:1.3rem;
+    font-size:1.1rem;
 
     line-height:1.05;
 
@@ -1676,17 +1676,19 @@ BOTON
 
     margin-top:35px;
 
-    height:50px;
-
-    border-radius:10px;
-
     background:#EBB137;
 
     color:#021C40;
 
-    font-size:1.25rem;
+    width:100%;
 
-    font-weight:800;
+    height:40px;
+
+    border-radius:8px;
+
+    font-size:1rem;
+
+    font-weight:700;
 
     transition:.35s;
 
