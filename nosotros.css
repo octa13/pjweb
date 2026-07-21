@@ -1,0 +1,1299 @@
+
+
+/*==================================================
+HERO MOBILE
+==================================================*/
+
+.hero{
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #031A43;
+    
+    height: 525px;
+}
+
+
+/* Imagen */
+
+.hero__imagen{
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+.hero__img-mobile{
+
+    display: block;
+
+    width: 100%;
+
+    height: 100vh;
+
+    object-fit: cover;
+
+   
+
+}
+
+.hero__img-desktop{
+
+    display: none;
+
+}
+
+
+/* Oscurece la imagen */
+
+.hero__imagen::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(2,20,60,.15) 0%,
+        rgba(2,20,60,.35) 30%,
+        rgba(2,20,60,.75) 60%,
+        rgba(2,20,60,.97) 100%
+    );
+
+}
+
+
+/*==================================================
+TÍTULO
+==================================================*/
+
+.hero__titulo{
+
+    position:absolute;
+
+    top:50px;
+
+    left:28px;
+
+    right:28px;
+
+    z-index:5;
+
+    color:#FFF;
+
+    font-size:3rem;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+}
+
+.hero__titulo span{
+
+    display:block;
+
+    color:#74B3FF;
+
+}
+
+
+/*==================================================
+LÍNEA
+==================================================*/
+
+.hero__linea{
+
+    position:absolute;
+
+    top:255px;
+
+    left:28px;
+
+    width:80x;
+
+    height:4px;
+
+    border-radius:30px;
+
+    background:#E8B338;
+
+    z-index:5;
+
+}
+
+
+/*==================================================
+CONTENIDO
+==================================================*/
+
+.hero__contenido{
+
+   display: none;
+
+}
+
+.hero__descripcion{
+
+    color:#FFF;
+
+    font-size:1rem;
+
+    line-height:1.75;
+
+    margin-top: -200px;
+
+    margin-left: -30px;
+
+    
+
+}
+
+.hero__descripcion strong{
+
+    font-weight:800;
+
+}
+
+
+
+/*==================================================
+NOSOTROS HISTORIA - MOBILE
+==================================================*/
+
+.nosotros-historia{
+    display: none;
+}
+
+.nosotros-historia-mobile{
+
+    padding:70px 0 80px;
+
+    background:#FFF;
+
+}
+
+.nosotros-historia-mobile .contenedor{
+
+    width:min(88%,500px);
+
+    margin:auto;
+
+}
+
+
+/*==================================================
+ENCABEZADO
+==================================================*/
+
+.historia-mobile__etiqueta{
+
+    display:inline-block;
+
+    color:#1D5DD6;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
+}
+
+.historia-mobile__titulo{
+
+    font-size:2rem;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    color:#031A43;
+
+    margin-bottom:18px;
+
+}
+
+
+
+
+/*==================================================
+IMAGEN
+==================================================*/
+
+.historia-mobile__imagen{
+
+    position:relative;
+
+    margin-bottom:40px;
+
+}
+
+.historia-mobile__imagen img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:22px;
+
+    position:relative;
+
+    z-index:3;
+
+}
+
+/* Rectángulo azul */
+
+.historia-mobile__fondo{
+
+    position:absolute;
+
+    right:-15px;
+
+    bottom:-15px;
+
+    width:65%;
+
+    height:100%;
+
+    background:linear-gradient(#3F7FBE,#063777);
+
+    border-radius:24px;
+
+    z-index:1;
+
+}
+
+
+
+
+/*==================================================
+TEXTO
+==================================================*/
+
+.historia-mobile__texto{
+
+    margin-bottom:55px;
+
+}
+
+.historia-mobile__texto p{
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+    color:#4F5D73;
+
+    margin-bottom:24px;
+
+}
+
+.historia-mobile__texto strong{
+
+     color:#363a3f;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+TIMELINE
+==================================================*/
+
+.timeline-mobile{
+
+    position:relative;
+
+    padding-left:38px;
+
+}
+
+/* Línea */
+
+.timeline-mobile::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:9px;
+
+    top:0;
+
+    bottom:0;
+
+    width:4px;
+
+    background:#1D5DD6;
+
+    border-radius:50px;
+
+}
+
+
+/*==================================================
+ITEM
+==================================================*/
+
+.timeline-mobile__item{
+
+    position:relative;
+
+    margin-bottom:34px;
+
+}
+
+.timeline-mobile__item:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/*==================================================
+CÍRCULO
+==================================================*/
+
+.timeline-mobile__punto{
+
+    position:absolute;
+
+    left:-38px;
+
+    top:18px;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:#1D5DD6;
+
+    border:5px solid #FFF;
+
+    box-shadow:0 0 0 3px #1D5DD6;
+
+    z-index:5;
+
+}
+
+
+/*==================================================
+CARD
+==================================================*/
+
+.timeline-mobile__card{
+
+    background:#FFF;
+
+    border-radius:18px;
+
+    padding:26px;
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,.08);
+
+}
+
+
+/*==================================================
+AÑO
+==================================================*/
+
+.timeline-mobile__anio{
+
+    display:block;
+
+    color:#0F4CC8;
+
+    font-size:1.6rem;
+
+    font-weight:800;
+
+    margin-bottom:8px;
+
+}
+
+
+/*==================================================
+TÍTULO
+==================================================*/
+
+.timeline-mobile__card h3{
+
+    font-size:1.2rem;
+
+    color:#031A43;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+DESCRIPCIÓN
+==================================================*/
+
+.timeline-mobile__card p{
+
+    color:#59657A;
+
+    line-height:1.65;
+
+    font-size:1rem;
+
+}
+
+
+
+
+
+
+/*==================================================
+NOSOTROS CONDUCCIÓN - MOBILE
+==================================================*/
+
+.nosotros-conduccion{
+    display: none;
+}
+
+.nosotros-conduccion-mobile{
+
+    padding:70px 0;
+
+    background:#e3ebf4;
+
+}
+
+.nosotros-conduccion-mobile .contenedor{
+
+    width:min(90%,420px);
+
+    margin:auto;
+
+}
+
+
+/*==================================================
+ENCABEZADO
+==================================================*/
+
+.conduccion-mobile__etiqueta{
+
+    display:inline-block;
+
+    color:#1D5DD6;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:.8px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
+}
+
+.conduccion-mobile__titulo{
+
+    font-size:2rem;
+
+    line-height:1.15;
+
+    color:#031A43;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+
+/*==================================================
+TEXTO
+==================================================*/
+
+.conduccion-mobile__texto{
+
+    margin-bottom:35px;
+
+}
+
+.conduccion-mobile__texto p{
+
+    color:#5B6678;
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+}
+
+
+/*==================================================
+CAJA CONDUCCIÓN
+==================================================*/
+
+.conduccion-mobile__info{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    background:#F7FAFF;
+
+    border:1px solid #E5EDF8;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:40px;
+
+}
+
+.conduccion-mobile__icono{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#0E4DA4;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.conduccion-mobile__icono i{
+
+    color:#FFF;
+
+    font-size:1.25rem;
+
+}
+
+.conduccion-mobile__info-texto h3{
+
+    color:#031A43;
+
+    font-size:1.1rem;
+
+    margin-bottom:10px;
+
+}
+
+.conduccion-mobile__info-texto p{
+
+    color:#5B6678;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
+
+
+/*==================================================
+IMAGEN
+==================================================*/
+
+.conduccion-mobile__imagen{
+
+    position:relative;
+
+    margin-bottom:35px;
+
+}
+
+.conduccion-mobile__imagen img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:18px;
+
+    position:relative;
+
+    z-index:3;
+
+}
+
+
+/* Fondo azul */
+
+.conduccion-mobile__fondo{
+
+    position:absolute;
+
+    right:-15px;
+
+    bottom:-15px;
+
+    width:50%;
+
+    height:20%;
+
+    background:linear-gradient(#3F7FBE,#073878);
+
+    border-radius:24px;
+
+    z-index:1;
+
+}
+
+
+/* Puntos */
+
+.conduccion-mobile__puntos{
+
+    position:absolute;
+
+    left:-18px;
+
+    bottom:22px;
+
+    width:80px;
+
+    height:80px;
+
+    background-image:radial-gradient(#8BB8FF 2px,transparent 2px);
+
+    background-size:14px 14px;
+
+    z-index:2;
+
+}
+
+
+/*==================================================
+TARJETA PRESIDENTE
+==================================================*/
+
+.conduccion-mobile__card{
+
+    background:#013274;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    text-align:center;
+
+    box-shadow:0 18px 35px rgba(0,0,0,.10);
+
+}
+
+.conduccion-mobile__card h3{
+
+    color:#FFF;
+
+    font-size:1.15rem;
+
+    font-weight:800;
+
+    letter-spacing:.5px;
+
+    margin-bottom:10px;
+
+}
+
+.conduccion-mobile__card span{
+
+    color:#E6EEF9;
+
+    font-size:.9rem;
+
+    line-height:1.7;
+
+    display:block;
+
+}
+
+
+
+
+@media (min-width:768px){
+
+ .hero__img-mobile{
+    display: none;
+ }  
+ 
+ 
+ .hero__img-desktop{
+    display: block;
+ }
+
+.hero__titulo{
+    font-size: 80px !important;
+    width: 150px;
+    margin-top: 35px;
+   
+}
+
+.hero__linea{
+    margin-top: 165px;
+
+}
+
+.hero__descripcion{
+    margin-top: -20px;
+    
+}
+
+
+.hero__imagen{
+    position: relative; /* Base para el posicionamiento absoluto */
+    display: inline-block; /* Ajusta el contenedor al tamaño de la imagen */
+  
+}
+
+/* Capa de degradado superpuesta */
+.hero__imagen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Usa colores RGBA para dar transparencia al degradado */
+  background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(1, 24, 66) 100%);
+  pointer-events: none; /* Permite hacer clic o guardar la imagen debajo */
+}
+
+
+/*==================================================
+HISTORIA
+==================================================*/
+
+
+.nosotros-historia-mobile{
+    display: none;
+}
+
+
+.nosotros-historia{
+
+    padding:110px 0;
+
+    background:#fff;
+
+}
+
+.nosotros-historia__contenido{
+
+    width:min(92%,1200px);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:90px;
+
+}
+
+
+
+/*==================================================
+TEXTO
+==================================================*/
+
+.nosotros-historia__texto{
+
+    width:48%;
+
+}
+
+.nosotros-historia__etiqueta{
+
+    display:inline-block;
+
+    color:#1D5DD6;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:.8px;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+
+}
+
+.nosotros-historia__texto h2{
+
+    font-size:3rem;
+
+    line-height:1.15;
+
+    color:#031A43;
+
+    font-weight:800;
+
+    margin-bottom:30px;
+
+}
+
+.nosotros-historia__texto p{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:#5A6678;
+
+    margin-bottom:22px;
+
+}
+
+
+
+
+/*==================================================
+IMAGEN
+==================================================*/
+
+.nosotros-historia__imagen{
+
+ 
+
+    width:48%;
+
+  
+
+}
+
+.imagen-wrapper{
+
+    position:relative;
+
+    margin-bottom:150px;   /* controla la separación */
+
+}
+
+.imagen-wrapper img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:18px;
+
+    position:relative;
+
+    z-index:3;
+
+}
+
+/* Rectángulo azul */
+
+.imagen-fondo{
+
+    position:absolute;
+
+    right:-28px;
+
+    bottom:-28px;
+
+    width:50%;
+
+    height:100%;
+
+    background:linear-gradient(#3f7fbe,#073878);
+
+    border-radius:30px;
+
+    z-index:1;
+
+}
+
+
+
+/* Puntos */
+
+.imagen-puntos{
+
+    position:absolute;
+
+    left:-35px;
+
+    bottom:35px;
+
+    width:120px;
+
+    height:120px;
+
+    background-image:radial-gradient(#90B7FF 2px, transparent 2px);
+
+    background-size:16px 16px;
+
+    z-index:2;
+
+}
+
+.mini-timeline{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    position:relative;
+
+}
+
+.mini-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:10px;
+
+    left:5%;
+
+    width:90%;
+
+    height:2px;
+
+    background:#D7E5FA;
+
+}
+
+.mini-timeline__item{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
+
+    color: rgb(78, 78, 78);
+
+}
+
+.mini-timeline__item span{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#1D5DD6;
+
+    border:4px solid #FFF;
+
+    box-shadow:0 0 0 2px #1D5DD6;
+
+}
+
+.mini-timeline__item strong{
+
+    color:#031A43;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+   
+
+}
+
+
+
+
+/*CONDUCCIÓN*//*CONDUCCIÓN*//*CONDUCCIÓN*/
+
+
+.nosotros-conduccion-mobile{
+    display: none;
+}
+
+
+.nosotros-conduccion{
+
+    padding:120px 0;
+
+    background:#e3ebf4;
+
+    display: block;
+}
+
+.nosotros-conduccion__contenido{
+
+    width:min(92%,1200px);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:90px;
+
+}
+
+
+.nosotros-conduccion__texto{
+
+    width:45%;
+
+}
+
+.nosotros-conduccion__etiqueta{
+
+    display:inline-block;
+
+    color:#1D5DD6;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:.8px;
+
+    text-transform:uppercase;
+
+    margin-bottom:22px;
+
+}
+
+.nosotros-conduccion__texto h2{
+
+    font-size:3rem;
+
+    line-height:1.15;
+
+    color:#031A43;
+
+    margin-bottom:28px;
+
+    font-weight:800;
+
+}
+
+.nosotros-conduccion__texto p{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:#5E6879;
+
+    margin-bottom:22px;
+
+}
+
+
+.nosotros-conduccion__info{
+
+    display:flex;
+
+    gap:24px;
+
+    margin-top:45px;
+
+    padding-top:35px;
+
+    border-top:2px solid #C7DAF8;
+
+}
+
+.info-icono{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#1D5DD6;
+
+    font-size:2rem;
+
+}
+
+.info-texto h3{
+
+    color:#031A43;
+
+    margin-bottom:10px;
+
+    font-size:1.3rem;
+
+}
+
+.info-texto p{
+
+    margin:0;
+    
+    font-size:1rem;
+
+}
+
+
+.nosotros-conduccion__imagen{
+
+    position:relative;
+
+    width:48%;
+
+}
+
+.nosotros-conduccion__imagen img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:22px;
+
+    position:relative;
+
+    z-index:3;
+
+}
+
+
+.nosotros-conduccion .imagen-fondo{
+
+    position:absolute;
+
+    right:-28px;
+
+    bottom:-28px;
+
+    width:55%;
+
+    height:35%;
+
+    border-radius:28px;
+
+    background:linear-gradient(#2E73C7,#073878);
+
+    z-index:1;
+
+}
+
+
+.nosotros-conduccion .imagen-puntos{
+
+    position:absolute;
+
+    right:-55px;
+
+    top:70px;
+
+    width:110px;
+
+    height:130px;
+
+    background-image:radial-gradient(#8DB7FF 2px,transparent 2px);
+
+    background-size:15px 15px;
+
+    z-index:2;
+
+}
+
+
+.tarjeta-presidente{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-25px;
+
+    width:62%;
+
+    padding:22px 28px;
+
+    background:#0E5FC2;
+
+    border-radius:0 30px 0 30px;
+
+    color:#fff;
+
+    z-index:5;
+
+}
+
+.tarjeta-presidente h3{
+
+    font-size:1.25rem;
+
+    margin-bottom:8px;
+
+    font-weight:800;
+
+    letter-spacing:.6px;
+
+}
+
+.tarjeta-presidente span{
+
+    font-size:.85rem;
+
+    line-height:1.6;
+
+    letter-spacing:.1px;
+
+}
+
+}
